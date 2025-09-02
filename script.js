@@ -13,8 +13,7 @@ let carInfo = function(Marka, Number, status, transfers, speed, km) {
   this.km = km;                
 
   this.setInfo = function(Marka, Number) {
-	this.Marka = Marka;
-	this.Number = Number;
+	  console.log(`Марка: ${this.Marka}. Номер: ${this.Number}`);
   };
 
   this.startEngine = function() { 
@@ -70,5 +69,6 @@ let carInfo = function(Marka, Number, status, transfers, speed, km) {
 };
 
 let car = new carInfo("Audi", "A123BC", "off", "нейтральная", 0, 0);
+
 
 console.log(car);
